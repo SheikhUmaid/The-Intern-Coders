@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+</head>
+<body>
+    
+    <header id="navigation">
+        <ul class="flex j-between primary-bg a-center" id='navbar'>
+            <li class='logo'><img style="height: 50px;" class="logo" src="{% static 'logo.png' %}" alt="Logo" srcset=""></li>
+            <li class='nav'>
+                <ul class='flex j-between a-center nav'>
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class='nav-item cta'><a href="/getadmission" class="border-secondary">Get Admission</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    
+</body>
+</html>
+
+
+
+{% block body %} 
+
+{% endblock %}
+
+<!-- <footer>
+</footer> -->
+<style>
+footer{
+    background:#03c47a;
+    color:white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+</style>
+<footer>&copy; Copyright The Intern Coders 2019</footer>
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Admission</title>
+    <link rel="stylesheet" href="{% static 'css/admission.css'%}">
+</head>
+<body>
+    <div class="container place-center">
+        <h1>Student Admission Portal</h1>
+        <form id='form' class="place-center" method="POST", action="">
+            {% csrf_token%}
+            <div class='input-container'>
+                <label for='name'>Enter Your Name*</label>
+                <input type='text' placeholder="Aaron Smith" id='name' name="name" required />
+            </div>
+            <div class='input-container'>
+                <label for='name'>Enter Your Phone Number*</label>
+                <input type='tel' placeholder="+91 8888 888 888" id='number' name="number" required />
+            </div>
+            <div class='input-container'>
+                <label for='course'>Enter Your Course Name*</label>
+                <input type='text' placeholder="Basics" id='course' name="course" required/>
+            </div>
+            <div class='input-container'>
+                <label for='secondCourse'>Enter Your Second Course Name<br><small>Leave Blank if You Don't Have second course</small></label>
+                
+                <input type='text' placeholder="Web Development" id='secondCourse' name="secondCourse" />
+            </div>
+            <div class="submit-container">
+                <input type="submit" value="Generate File">
+            </div>
+        </form>
+    </div>
+
+
+    <!-- <form action="" method="post">
+        <input type="text">
+        <button type="submit">HEllo</button>
+        <input type="submit" value="jjj">
+    </form> -->
+
+    <a href='#' id='link' >Download </a>
+
+    <!-- <script src="{% static 'script/admission.js' %}"></script> -->
+</body>
+<style>
+    footer{
+        background:#03c47a;
+        color:white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+    </style>
+    <footer>&copy; Copyright The Intern Coders 2019</footer>
+</html>
